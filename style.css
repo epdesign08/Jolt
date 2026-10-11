@@ -1,0 +1,44 @@
+:root {
+  --bg: #f4efff; --card: #ffffff; --field: #e8dfff; --text: #1a0f33; --muted: #6b6185;
+  --purple: #6b3bf5; --yellow: #ffd60a; --ink: #1a0f33;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f0a1c; --card: #1c1433; --field: #2b2050; --text: #f2eeff; --muted: #a59bc2; --purple: #a98bff; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.55 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 0 20px 64px; }
+header.hero {
+  background: linear-gradient(135deg, #6b3bf5, #b44dff); color: #fff; text-align: center;
+  padding: 56px 20px 64px; border-radius: 0 0 36px 36px;
+}
+header.hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 14px 30px rgba(26, 15, 51, .35); }
+header.hero h1 { font-size: 46px; line-height: 1.1; margin: 22px 0 10px; font-weight: 800; }
+header.hero p { font-size: 20px; margin: 0 auto; max-width: 520px; opacity: .92; }
+.badge {
+  display: inline-block; margin-top: 26px; padding: 13px 24px; border-radius: 16px;
+  background: var(--yellow); color: var(--ink); font-weight: 800; text-decoration: none;
+}
+h2 { font-size: 26px; margin: 48px 0 14px; }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.card { background: var(--card); border-radius: 20px; padding: 20px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+.tag { color: var(--purple); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+ol.steps { padding-left: 0; list-style: none; counter-reset: s; }
+ol.steps li { counter-increment: s; background: var(--card); border-radius: 16px; padding: 16px 16px 16px 60px; margin-bottom: 10px; position: relative; }
+ol.steps li::before {
+  content: counter(s); position: absolute; left: 16px; top: 14px; width: 30px; height: 30px; border-radius: 50%;
+  background: linear-gradient(135deg, #6b3bf5, #b44dff); color: #fff; font-weight: 800; text-align: center; line-height: 30px;
+}
+a { color: var(--purple); }
+footer { text-align: center; color: var(--muted); font-size: 14px; padding: 32px 20px 48px; }
+footer a { margin: 0 8px; font-weight: 700; text-decoration: none; }
+.policy h1 { font-size: 34px; margin: 40px 0 4px; }
+.policy h2 { font-size: 19px; margin: 28px 0 6px; }
+.policy p { margin: 0 0 8px; color: var(--muted); }
+.policy .meta { font-size: 14px; }
+.top { display: inline-block; margin-top: 28px; font-weight: 700; text-decoration: none; }
