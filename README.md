@@ -19,7 +19,7 @@ This repository holds the Jolt website, including the privacy policy, terms of u
 - Website: https://epdesign08.github.io/Jolt/
 - Privacy policy: https://epdesign08.github.io/Jolt/privacy.html
 - Terms of use: https://epdesign08.github.io/Jolt/terms.html
-- Support: support@yourdomain.com
+- Support: epdesign08@gmail.com
 
 ## Status
 
