@@ -1,8 +1,8 @@
-# Jolt
+# Jolt Code
 
 **Idea to project, from your pocket.**
 
-Jolt is an iPhone app that sends the code you write straight to your ESP32, Pico W or any MicroPython Wi-Fi board. No laptop, no cable.
+Jolt Code is an iPhone app that sends the code you write straight to your ESP32, Pico W or any MicroPython Wi-Fi board. No laptop, no cable.
 
 This repository holds the Jolt website, including the privacy policy, terms of use and support details. It does not contain the app's source code.
 
@@ -27,4 +27,4 @@ Jolt is in testing ahead of its App Store release.
 
 ---
 
-© 2026 EPDESIGN LLC. All rights reserved. MicroPython, ESP32 and Raspberry Pi Pico are trademarks of their respective owners; Jolt is not affiliated with them.
+© 2026 EBEN Labs LLC. All rights reserved. MicroPython, ESP32 and Raspberry Pi Pico are trademarks of their respective owners; Jolt is not affiliated with them.
