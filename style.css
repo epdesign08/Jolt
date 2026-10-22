@@ -22,6 +22,12 @@ header.hero p { font-size: 20px; margin: 0 auto; max-width: 520px; opacity: .92;
   display: inline-block; margin-top: 26px; padding: 13px 24px; border-radius: 16px;
   background: var(--yellow); color: var(--ink); font-weight: 800; text-decoration: none;
 }
+.shots {
+  display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 32px 20px 8px;
+  max-width: 1200px; margin: 0 auto; -webkit-overflow-scrolling: touch;
+}
+.shots img { flex: none; width: 210px; height: auto; border-radius: 22px; scroll-snap-align: center; }
+@media (min-width: 1200px) { .shots { justify-content: center; } }
 h2 { font-size: 26px; margin: 48px 0 14px; }
 .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .card { background: var(--card); border-radius: 20px; padding: 20px; }
