@@ -7,8 +7,8 @@
   <meta name="description" content="Jolt Code is an iPhone code editor that sends MicroPython straight to your ESP32 or Pico W over Wi-Fi. No laptop, no cable.">
   <meta property="og:title" content="Jolt Code">
   <meta property="og:description" content="Write MicroPython and HTML on your iPhone and run it on your ESP32 or Pico over Wi-Fi.">
-  <meta property="og:image" content="https://epdesign08.github.io/Jolt/images/header.jpg">
-  <meta property="og:url" content="https://epdesign08.github.io/Jolt/">
+  <meta property="og:image" content="https://ebenlabs.app/Jolt/images/header.jpg">
+  <meta property="og:url" content="https://ebenlabs.app/Jolt/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
@@ -18,7 +18,17 @@
     <img src="icon.png" alt="Jolt Code app icon">
     <h1>Idea to project,<br>from your pocket</h1>
     <p>Jolt Code sends the code you write straight to your ESP32, Pico W or any MicroPython Wi-Fi board. No laptop, no cable.</p>
-    <span class="badge">Coming soon to the App Store</span>
+    <span class="badge waitlist-fallback">Coming January 1, 2027 to the App Store</span>
+    <form class="waitlist" novalidate hidden>
+      <p class="launch">Launching January 1, 2027 on the App Store</p>
+      <div class="field">
+        <label class="sr" for="email-top">Email address</label>
+        <input id="email-top" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit">Get it on day one</button>
+      </div>
+      <p class="note" role="status">Join the waitlist: we'll email you when you can pre-order, and on launch day. No spam, unsubscribe any time.</p>
+    </form>
   </header>
 
   <div class="shots">
@@ -47,6 +57,20 @@
       <li><strong>Write, press play, repeat.</strong> From then on it's all from your iPhone.</li>
     </ol>
 
+    <section class="cta" hidden>
+      <h2>Be there on day one</h2>
+      <p>Jolt Code launches January 1. Leave your email and you'll hear first: when pre-orders open, and the moment it's live.</p>
+      <form class="waitlist" novalidate hidden>
+      <div class="field">
+        <label class="sr" for="email-bottom">Email address</label>
+        <input id="email-bottom" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit">Get it on day one</button>
+      </div>
+      <p class="note" role="status">Join the waitlist: we'll email you when you can pre-order, and on launch day. No spam, unsubscribe any time.</p>
+    </form>
+    </section>
+
     <h2 id="support">Support</h2>
     <div class="card">
       <p>Stuck, found a bug, or want a plugin for a part we don't cover? Email <a href="mailto:epdesign08@gmail.com">epdesign08@gmail.com</a> and a person will reply.</p>
@@ -57,7 +81,8 @@
     <a href="privacy.html">Privacy Policy</a>
     <a href="terms.html">Terms of Use</a>
     <a href="#support">Support</a>
-    <p>Jolt Code is made by <a href="https://epdesign08.github.io/EBEN-LABS/">EBEN Labs</a> · &copy; 2026 EBEN Labs LLC</p>
+    <p>Jolt Code is made by <a href="https://ebenlabs.app/">EBEN Labs</a> · &copy; 2026 EBEN Labs LLC</p>
   </footer>
+  <script src="waitlist.js"></script>
 </body>
 </html>

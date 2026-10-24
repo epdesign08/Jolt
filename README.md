@@ -16,9 +16,9 @@ This repository holds the Jolt website, including the privacy policy, terms of u
 
 ## Links
 
-- Website: https://epdesign08.github.io/Jolt/
-- Privacy policy: https://epdesign08.github.io/Jolt/privacy.html
-- Terms of use: https://epdesign08.github.io/Jolt/terms.html
+- Website: https://ebenlabs.app/Jolt/
+- Privacy policy: https://ebenlabs.app/Jolt/privacy.html
+- Terms of use: https://ebenlabs.app/Jolt/terms.html
 - Support: epdesign08@gmail.com
 
 ## Status
