@@ -3,86 +3,190 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jolt Code: MicroPython for ESP32 &amp; Pico, from your iPhone</title>
-  <meta name="description" content="Jolt Code is an iPhone code editor that sends MicroPython straight to your ESP32 or Pico W over Wi-Fi. No laptop, no cable.">
+  <title>Jolt Code: MicroPython for ESP32 &amp; Pico, from your iPhone · EBEN Labs</title>
+  <meta name="description" content="Jolt Code is an iPhone code editor that sends MicroPython straight to your ESP32 or Pico W over Wi-Fi. No laptop, no cable. Launching January 1, 2027.">
+  <meta name="theme-color" content="#040309">
   <meta property="og:title" content="Jolt Code">
   <meta property="og:description" content="Write MicroPython and HTML on your iPhone and run it on your ESP32 or Pico over Wi-Fi.">
   <meta property="og:image" content="https://ebenlabs.app/Jolt/images/header.jpg">
   <meta property="og:url" content="https://ebenlabs.app/Jolt/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="icon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  <header class="hero">
-    <img src="icon.png" alt="Jolt Code app icon">
-    <h1>Idea to project,<br>from your pocket</h1>
-    <p>Jolt Code sends the code you write straight to your ESP32, Pico W or any MicroPython Wi-Fi board. No laptop, no cable.</p>
-    <span class="badge waitlist-fallback">Coming January 1, 2027 to the App Store</span>
-    <form class="waitlist" novalidate hidden>
-      <p class="launch">Launching January 1, 2027 on the App Store</p>
-      <div class="field">
-        <label class="sr" for="email-top">Email address</label>
-        <input id="email-top" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <button type="submit">Get it on day one</button>
-      </div>
-      <p class="note" role="status">Join the waitlist: we'll email you when you can pre-order, and on launch day. No spam, unsubscribe any time.</p>
-    </form>
-  </header>
+<body class="theme-jolt">
+<div class="page">
 
-  <div class="shots">
-    <img src="images/1-code.jpg" alt="The editor with live output from the board" loading="lazy">
-    <img src="images/2-remote.jpg" alt="A remote page with a switch, slider and button" loading="lazy">
-    <img src="images/3-plugins.jpg" alt="Sensor plugins, each with a wiring guide" loading="lazy">
-    <img src="images/4-libraries.jpg" alt="Installing libraries onto the board" loading="lazy">
-    <img src="images/5-projects.jpg" alt="Projects and a connected board" loading="lazy">
+  <div class="sky" aria-hidden="true">
+    <div class="hue">
+      <div class="swirl big"></div>
+      <div class="swirl small"></div>
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+      <div class="blob b4"></div>
+      <div class="blob b5"></div>
+      <div class="blob b6"></div>
+    </div>
+    <div class="stars"></div>
+    <div class="comet one"></div>
+    <div class="comet two"></div>
   </div>
 
-  <main>
-    <h2>What it does</h2>
-    <div class="grid">
-      <div class="card"><div class="tag">Write</div><h3>An editor made for thumbs</h3><p>Python and HTML with one-tap shortcut keys, undo, and colouring that's readable on a phone.</p></div>
-      <div class="card"><div class="tag">Send</div><h3>One tap to your board</h3><p>Press play and your code runs on the board over Wi-Fi, with its output in a live terminal.</p></div>
-      <div class="card"><div class="tag">Start fast</div><h3>Plugins with wiring guides</h3><p>Sensors, switches and lights ready to run, each with the parts to buy and where the wires go.</p></div>
-      <div class="card"><div class="tag">Control</div><h3>Build the remote too</h3><p>Add switches, sliders, buttons and live readings, pick a pin for each, and control your project from anywhere on your Wi-Fi. No code needed.</p></div>
-      <div class="card"><div class="tag">Fix</div><h3>Open what's on the board</h3><p>Browse the board's files, pull one into the editor, change it and send it back.</p></div>
-      <div class="card"><div class="tag">Keep</div><h3>Projects that follow you</h3><p>Jolt Pro saves your projects to your account so they're on any iPhone you sign in to.</p></div>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/">
+        <img src="/favicon.svg" width="42" height="42" alt="">
+        <span>EBEN LABS</span>
+      </a>
+      <nav class="links" aria-label="Main">
+        <a href="/Jolt/" aria-current="page">Jolt Code</a>
+        <a href="/Stallwise/">Stallwise</a>
+        <a href="#support">Support</a>
+        <a class="pill-btn" href="mailto:epdesign08@gmail.com">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="app-hero">
+        <div>
+          <div class="app-title">
+            <div class="icon-orbit"><img src="icon.png" alt="Jolt Code app icon"></div>
+            <div class="eyebrow">AN EBEN LABS APP · iPHONE</div>
+          </div>
+          <h1>Code your board<br>from your <span class="accent-text shimmer">phone.</span></h1>
+          <p class="lede">Jolt Code sends the MicroPython you write straight to your ESP32, Pico W or any MicroPython Wi-Fi board. No laptop, no cable.</p>
+
+          <span class="soon-pill waitlist-fallback"><i></i>Launching January 1, 2027 on the App Store</span>
+          <form class="waitlist" novalidate hidden>
+            <p class="launch">Launching January 1, 2027</p>
+            <div class="field">
+              <label class="sr" for="email-top">Email address</label>
+              <input id="email-top" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+              <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <button type="submit">Get it on day one</button>
+            </div>
+            <p class="note" role="status">Join the waitlist: we'll email you when pre-orders open and on launch day. No spam.</p>
+          </form>
+        </div>
+
+        <div class="demo-card reveal" aria-label="An example of writing code in Jolt and running it on a board">
+          <div class="demo-inner">
+            <div class="demo-bar"><span id="demo-title">Desk lights</span><span class="run">▶ Run</span></div>
+            <pre class="demo-code" id="demo-code"></pre>
+            <div class="demo-term" id="demo-term" aria-live="off"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>ESP32</span><span>RASPBERRY PI PICO W</span><span>MICROPYTHON</span><span>WEBREPL</span><span>NEOPIXEL</span><span>SERVOS</span><span>SENSORS</span><span>HTML REMOTES</span><span>LIBRARIES</span><span>LIVE TERMINAL</span>
+      <span>ESP32</span><span>RASPBERRY PI PICO W</span><span>MICROPYTHON</span><span>WEBREPL</span><span>NEOPIXEL</span><span>SERVOS</span><span>SENSORS</span><span>HTML REMOTES</span><span>LIBRARIES</span><span>LIVE TERMINAL</span>
     </div>
+  </div>
 
-    <h2>How it works</h2>
-    <ol class="steps">
-      <li><strong>Set up the board once.</strong> A five-minute job on a computer puts MicroPython on it and joins it to your Wi-Fi. Jolt walks you through it. Boards running CircuitPython or Arduino need MicroPython installed first.</li>
-      <li><strong>Find it from your phone.</strong> Jolt looks for the board on your Wi-Fi and connects.</li>
-      <li><strong>Write, press play, repeat.</strong> From then on it's all from your iPhone.</li>
-    </ol>
-
-    <section class="cta" hidden>
-      <h2>Be there on day one</h2>
-      <p>Jolt Code launches January 1. Leave your email and you'll hear first: when pre-orders open, and the moment it's live.</p>
-      <form class="waitlist" novalidate hidden>
-      <div class="field">
-        <label class="sr" for="email-bottom">Email address</label>
-        <input id="email-bottom" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <button type="submit">Get it on day one</button>
+  <section class="show jolt-show" aria-labelledby="jolt-title">
+    <div class="show-stage">
+      <div class="show-copy">
+        <div class="eyebrow" style="color:#C9B5FF">INSIDE THE APP</div>
+        <h2 id="jolt-title" class="show-title">Everything you need,<br><span class="accent-text">in your pocket.</span></h2>
+        <div class="steps">
+          <div class="bar"><i></i></div>
+          <div class="step"><b>01</b><div><h3>Write on your phone</h3><p>An editor made for thumbs, with shortcut keys for Python and HTML.</p></div></div>
+          <div class="step"><b>02</b><div><h3>Plug in a sensor</h3><p>Ready-made plugins, each with a wiring guide. Press play and it runs.</p></div></div>
+          <div class="step"><b>03</b><div><h3>Build your own remote</h3><p>Switches, sliders, buttons and live readings. No code needed.</p></div></div>
+          <div class="step"><b>04</b><div><h3>Add libraries in a tap</h3><p>Install from the MicroPython index or straight from GitHub.</p></div></div>
+        </div>
       </div>
-      <p class="note" role="status">Join the waitlist: we'll email you when you can pre-order, and on launch day. No spam, unsubscribe any time.</p>
-    </form>
+      <div class="show-visual">
+        <div class="orbit" aria-hidden="true"></div>
+        <div class="phone">
+          <div class="screen">
+            <img src="/images/jolt-1.jpg" alt="Jolt Code editor running a program, with live output from the board" class="on">
+            <img src="/images/jolt-2.jpg" alt="Sensor plugins with wiring guides" loading="lazy">
+            <img src="/images/jolt-3.jpg" alt="A remote with a switch, slider and button" loading="lazy">
+            <img src="/images/jolt-4.jpg" alt="Installing a library onto the board" loading="lazy">
+          </div>
+        </div>
+        <div class="chip c1" aria-hidden="true"><span class="dot"></span>Live from board</div>
+        <div class="chip c2" aria-hidden="true">Soil moisture: 48 %</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="block">
+      <div class="eyebrow reveal" style="color:#C9B5FF">WHAT IT DOES</div>
+      <h2 class="reveal">Built for people who build</h2>
+      <div class="features">
+        <div class="feature reveal"><div class="tag">Write</div><h3>An editor made for thumbs</h3><p>Python and HTML with one-tap shortcut keys, undo, arrow keys and colouring that's readable on a phone.</p></div>
+        <div class="feature reveal" style="--d:.08s"><div class="tag">Send</div><h3>One tap to your board</h3><p>Press play and your code runs on the board over Wi-Fi, with its output in a live terminal.</p></div>
+        <div class="feature reveal" style="--d:.16s"><div class="tag">Start fast</div><h3>Plugins with wiring guides</h3><p>Sensors, switches and lights ready to run, each with the parts and where the wires go.</p></div>
+        <div class="feature reveal"><div class="tag">Control</div><h3>Remotes, no code needed</h3><p>Switches, sliders, servos, buttons and live readings. Pick a pin for each and control your project from the couch.</p></div>
+        <div class="feature reveal" style="--d:.08s"><div class="tag">Fix</div><h3>Open what's on the board</h3><p>Browse the board's files, pull one into the editor, change it and send it back.</p></div>
+        <div class="feature reveal" style="--d:.16s"><div class="tag">Keep</div><h3>Projects that follow you</h3><p>Jolt Pro saves your projects to your account, and your board can send alerts to your phone.</p></div>
+      </div>
     </section>
 
-    <h2 id="support">Support</h2>
-    <div class="card">
-      <p>Stuck, found a bug, or want a plugin for a part we don't cover? Email <a href="mailto:epdesign08@gmail.com">epdesign08@gmail.com</a> and a person will reply.</p>
-    </div>
-  </main>
+    <section class="block">
+      <div class="eyebrow reveal" style="color:#C9B5FF">HOW IT WORKS</div>
+      <h2 class="reveal">Three steps to your first run</h2>
+      <ol class="howto">
+        <li class="reveal"><strong>Set up the board once</strong>A five-minute job on a computer puts MicroPython on it and joins it to your Wi-Fi. Jolt walks you through it.</li>
+        <li class="reveal" style="--d:.1s"><strong>Find it from your phone</strong>Jolt looks for the board on your Wi-Fi and connects. It remembers it next time.</li>
+        <li class="reveal" style="--d:.2s"><strong>Write, press play, repeat</strong>From then on it's all from your iPhone. Boards running CircuitPython or Arduino need MicroPython first.</li>
+      </ol>
+    </section>
 
-  <footer>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Use</a>
-    <a href="#support">Support</a>
-    <p>Jolt Code is made by <a href="https://ebenlabs.app/">EBEN Labs</a> · &copy; 2026 EBEN Labs LLC</p>
-  </footer>
-  <script src="waitlist.js"></script>
+    <section class="block" hidden id="cta">
+      <div class="glow-border reveal">
+        <div class="inner">
+          <h2>Be there on <span class="accent-text">day one</span></h2>
+          <p>Jolt Code launches January 1. Leave your email and you'll hear first: when pre-orders open, and the moment it's live.</p>
+          <form class="waitlist" novalidate hidden>
+            <div class="field">
+              <label class="sr" for="email-bottom">Email address</label>
+              <input id="email-bottom" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+              <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <button type="submit">Get it on day one</button>
+            </div>
+            <p class="note" role="status">No spam. Unsubscribe any time.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="support">
+      <div class="eyebrow reveal" style="color:#C9B5FF">SUPPORT</div>
+      <h2 class="reveal">Questions</h2>
+      <div class="faq">
+        <details class="reveal"><summary>Which boards does it work with?</summary><p>Any Wi-Fi board running MicroPython with WebREPL turned on: ESP32 boards, the Raspberry Pi Pico W and others. Jolt doesn't upload Arduino sketches, and it doesn't talk to boards running CircuitPython.</p></details>
+        <details class="reveal"><summary>Do I need a computer?</summary><p>Only once, to put MicroPython on a new board and join it to your Wi-Fi. Jolt's setup guide walks you through it. After that, everything happens on your iPhone.</p></details>
+        <details class="reveal"><summary>What does Jolt Pro add?</summary><p>Unlimited projects and remotes, every plugin, cloud save so your projects follow your account, and board alerts on your phone. Pro is a monthly or yearly subscription through Apple, and you can cancel any time in Settings.</p></details>
+        <details class="reveal"><summary>Something isn't working. Who do I ask?</summary><p>Email <a href="mailto:epdesign08@gmail.com">epdesign08@gmail.com</a> and a person will reply. Ideas for new plugins are welcome too.</p></details>
+      </div>
+    </section>
+
+    <footer class="bottom">
+      <div class="mark"><img src="/favicon.svg" width="28" height="28" alt=""><span>© 2026 EBEN Labs LLC</span></div>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Jolt privacy</a>
+        <a href="terms.html">Jolt terms</a>
+        <a href="/Stallwise/">Stallwise</a>
+        <a href="/">EBEN Labs</a>
+      </nav>
+    </footer>
+  </div>
+</div>
+<script src="/scroll.js"></script>
+<script src="/app.js"></script>
+<script src="waitlist.js"></script>
 </body>
 </html>

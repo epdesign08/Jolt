@@ -66,7 +66,7 @@
 
   // Show the forms only once the waitlist is set up and answering; otherwise the page keeps its "coming soon" badge.
   call('waitlist_count').then((n) => {
-    document.querySelectorAll('.waitlist, .cta').forEach((el) => { el.hidden = false; });
+    document.querySelectorAll('.waitlist, #cta').forEach((el) => { el.hidden = false; });
     document.querySelectorAll('.waitlist-fallback').forEach((el) => { el.hidden = true; });
     showCount(n);
   }).catch(() => {});
